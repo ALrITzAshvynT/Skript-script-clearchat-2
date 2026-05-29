@@ -1,2 +1,22 @@
-# Skript-script-clearchat-2
-THIS IS FOR SKRIPT PLUGIN FOR MINECRAFT!! THE VERSION OF SKRIPT HAS TO BE 2.15.2 
+command /cchatclear:
+
+    trigger:
+
+        if player is not op:
+
+            send "&cYou do not have permission."
+
+            stop
+
+
+
+        loop all players:
+
+            loop 150 times:
+
+                send "" to loop-player
+
+
+
+        broadcast "&7[&bServer&7] &aChat has been cleared by &e%player%&a!"
+
